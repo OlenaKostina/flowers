@@ -428,6 +428,7 @@ body {
 }
 .modal-tetle {
 	color: #292929;
+	text-align: center;
 }
 .button {
 	display: inline-block;
