@@ -1,0 +1,488 @@
+@font-face {
+font-family: 'Gotham Pro Light';
+src: url('../fonts/GothamPro-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro Medium';
+src: url('../fonts/GothamPro-Medium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Regular';
+url('../fonts/MyriadPro-Regular.woff') format('woff'),
+font-weight: normal;
+font-style: normal;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	background-color: #292929;
+	color: #ffffff;
+	font-family: 'Gotham Pro', sant-serif;
+	margin: 0;
+}
+.header {
+	padding-top: 50px;
+}
+.header-description {
+	font-family: 'Gotham Pro Light';
+	letter-spacing: 0.12px;
+	font-size: 12px;
+}
+.text-color-red {
+	color: #ff3469;
+	font-family: 'Gotham Pro Medium';
+}
+.header-contacts {
+	text-align: right;
+}
+.header-phone {
+	display: block;		
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Gotham Pro Medium';
+}
+.header-info {
+	display: block;	
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 7px;
+}
+.callback {
+	display: block;
+	color: #ff3469;	
+	font-size: 16px;
+	margin-top: 16px;
+}
+.callback:hover {
+	color: #fff;	
+}
+.hero {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 77px;
+	border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+	font-family: 'Gotham Pro Medium';	
+	font-weight: 500;
+	font-size: 34px;
+	text-transform: uppercase;
+	letter-spacing: 0.34px;
+	line-height: 1.2;
+	max-width: 660px;
+	margin: auto;
+	margin-bottom: 34px;
+}
+.hero-description {
+	font-family: 'Gotham Pro Light';
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	line-height: 1.4;
+	margin: auto;
+	max-width: 590px;
+}
+.flowers-slider {
+	width: 100%;
+	margin-top: 87px;
+}
+:root {
+    --swiper-navigation-size: 20px;
+}
+.flowers-slider-button-color {
+	color: #ffffff;
+}
+.flowers-slider-button-color:hover {
+	color: #ff2e55;
+}
+.hero-cta {
+	display: block;
+	font-family: 'Gotham Pro Light';
+	font-size: 19px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	margin-top: 83px;
+	margin-bottom: 38px;
+}
+.hero-button {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Gotham Pro Medium';
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.34px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 70px;
+	padding-right: 70px;
+	background-color: #ff2e55;
+	border: 1px solid #ff2e55;
+}
+.hero-button:hover {
+	color: #ff2e55;
+	background-color: #ffffff;
+}
+.reviews {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.reviews-title {
+	font-family: 'Gotham Pro Medium';
+   font-weight: 300;	
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.3px;
+	margin-bottom: 70px;
+	line-height: 1.2;
+}
+.review-slide {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.reviews-slider-button-color {
+	color: #ff2e55;
+}
+.reviews-slider-button-color:hover {
+	color: #ffffff;
+}
+.review-image {
+	width: 220px;
+	height: 220px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	font-family: 'Gotham Pro Light';
+	font-size: 20px;
+	position: relative;
+	margin-right: 50px;
+}
+/* Затемняем картинку фона отзыва */
+.review-image:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+}
+/* Снимаем затемнение с содержимого блока каринки к отзыву */
+.review-image > * {
+	position: relative;
+}
+.review-image-1 {
+	background: black url(../img/rereview/review-1.jpg);
+}
+.review-image-2 {
+	background: black url(../img/rereview/review-2.jpg);
+}
+.review-name {
+	margin-bottom: 7px;
+}
+.review-text {
+	font-size: 18px;
+	letter-spacing: 0.18px;
+	line-height: 1.4;
+}
+.review-link {
+	color: #f24841;
+}
+.advantages {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+	min-height: 82px;
+	margin-bottom: 30px;
+}
+.advantages-title {
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 1.4;
+	max-width: 270px;
+	margin: auto;
+}
+.goods {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.section-title {
+	font-family: 'Gotham Pro Medium';
+   font-weight: 300;	
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.3px;
+	line-height: 1.2;
+}
+.section-description {
+	font-size: 18px;
+	text-align: center;
+}
+.card {
+	text-align: center;
+	border: 3px solid #ffffff;
+	padding: 30px;
+	margin-top: 27px;
+}
+.card-title {
+	margin-top: 23px;
+	text-transform: uppercase;
+}
+.card-label {
+	display: block;
+	font-size: 14px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+.color-label {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.color-input {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	x-index: -9;
+}
+
+/* Цвет цветов*/
+.color-label.white {
+	background-color: #ffffff;
+}
+.color-label.biege {
+	background-color: #f7b496;
+}
+.color-label.pink {
+	background-color: #ed366e;
+}
+.color-label.red {
+	background-color: #ff0000;
+}
+.color-label.blue {
+	background-color: #12129d;
+}
+.color-label.yellow {
+	background-color: #ffff00;
+}
+.color-label.bluelight {
+	background-color: #00bfff;
+}
+.color-label.purple {
+	background-color: #c8a2c8;
+}
+
+/* Конец цвета цветов*/
+
+.counter-input {
+	border: 2px solid #ffffff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #292929;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.counter-button {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #292929;
+	border: none;
+}
+
+.card-button {
+	display: inline-block;
+	font-family: 'Gotham Pro Medium';
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.34px;
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ff2e55;
+	border: none;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.card-button:hover {
+	color: #ff2e55;
+	background-color: #ffffff;
+}
+.more {
+	display: block;
+	text-align: center;
+	margin-top: 39px;
+	padding: 10px;
+	color: #f24841;
+	font-size: 14px;
+}
+
+.more:after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 4px;
+	background: url('../img/caret.png') no-repeat center;
+	margin-left: 14px;
+	vertical-align: middle;
+}
+.offer {
+	padding-top: 100px;
+	padding-bottom: 85px;
+	background-color: #1a1a1a;
+	text-align: center;
+}
+.offer-link {
+	display: block;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #ffffff;
+	margin-bottom: 55px;
+}
+.offer-label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 22px;
+}
+.offer-phone {
+	font-size: 36px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 30px;
+}
+.footer-menu-link {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.footer-menu-item {
+	margin-right: 35px;
+}
+.social {
+	font-size: 16px;
+}
+.footer-label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.footer-info {
+	text-align: right;
+}
+.footer-phone {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+.footer-white {
+	background-color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 42px;
+}
+.footer-description {
+	color: #292929;
+}
+.copyright {
+	font-family: 'Myriad Pro Regular', ;
+	color: #101010;
+	font-size: 12px;
+	text-align: right;
+}
+.copyright-link {
+	color: #101010;
+}
+.modal {
+	display: none;
+}
+.modal-tetle {
+	color: #292929;
+}
+.button {
+	display: inline-block;
+	width: 100%;
+	font-family: 'Gotham Pro Medium';
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.34px;
+	padding: 20px;
+	background-color: #ff2e55;
+	border: none;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.button:hover {
+	background-color: #292929;
+}
+.modal-input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+}
+
+@media (max-width: 768px) {
+	.header {
+		text-align: center;
+	}
+	.header-contacts {
+		text-align: center;
+	}
+	.hero {
+		padding-top: 50px;
+	}
+	.hero-title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.hero-description {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	.hero-button {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.footer-info {
+		text-align: left;
+	}
+}
+
+@media (max-width: 576px) {
+	.footer-info, .offer, .offer-title {
+		text-align: left;
+	}
+}
