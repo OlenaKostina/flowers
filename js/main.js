@@ -67,6 +67,32 @@ $("#review-1").on('click', function() {
   });
 
 });
-//конец показа букета певого отзыва
+
+//показать букет второго отзыва - не показывает почемуто
+$("#review-2").on('click', function() {
+
+  $.fancybox.open([
+    {
+      src  : 'https://source.unsplash.com/IvfoDk30JnI/1500x1000',
+      opts : {
+        caption : 'Название первое',
+        thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+      }
+    },
+    {
+      src  : 'https://source.unsplash.com/0JYgd2QuMfw/1500x1000',
+      opts : {
+        caption : 'Название второе',
+        thumb   : 'https://source.unsplash.com/0JYgd2QuMfw/240x160'
+      }
+    }
+  ], {
+    loop : true,
+    thumbs : {
+      autoStart : true
+    }
+  });
+
+});
 
 });
